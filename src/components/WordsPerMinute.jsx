@@ -16,7 +16,14 @@ const words = [
 'cebra',
 'erizo',
 'pulpo',
-'ladrillo'
+'ladrillo',
+'golosina',
+'zapatillas',
+'alfajor',
+'ventilador',
+'banco',
+'silla',
+'mesa'
 ];
 
 const WordsPerMinute = () => {
@@ -38,6 +45,7 @@ const [word, setWord]= useState(()=> words[Math.random() * words.length | 0])
 		
 	}
 	
+	
 	useEffect(()=> {
 		if(time!==0) {
 			const timeout = setTimeout(()=> setTime(time - 1),1000);
@@ -48,9 +56,15 @@ const [word, setWord]= useState(()=> words[Math.random() * words.length | 0])
 	
 	
 	
-	
-	
-	
+	const handleClick = () => {
+		if(buffer!==word && time===0) {
+			setBuffer("")
+			
+		}
+		
+		setTime(60)
+		
+	}
 	
 	
 	
@@ -67,7 +81,7 @@ const [word, setWord]= useState(()=> words[Math.random() * words.length | 0])
 						<button type="submit">Submit</button>
 					</form>
 				): (
-					<button onClick={()=> setTime(60)}> Play</button>
+					<button onClick={()=> handleClick()}> Play</button>
 				)
 				}
 		</div>

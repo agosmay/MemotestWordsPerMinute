@@ -1,6 +1,5 @@
 import Memotest from './components/Memotest';
 import WordsPerMinute from './components/WordsPerMinute';
-import Pokemon from './components/Pokemon';
 import { BrowserRouter, Routes , Route } from 'react-router-dom';
 
 
@@ -20,11 +19,7 @@ const App = () => {
 				path="/wpm" 
 				element={<WordsPerMinute />}
 			/>
-			<Route 
-				path="/pokemon" 
-				element={<Pokemon />}
-			/>
-		
+			
 		</Routes>
 	</BrowserRouter>
   )
