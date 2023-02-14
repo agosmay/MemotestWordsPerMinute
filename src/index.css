@@ -58,3 +58,20 @@ main {
 	
 }
 
+.link-container {
+	width: 100%;
+	margin: 20px auto;
+	text-align: center;
+	
+	
+}
+
+
+.link {
+	color: white;
+	font-size: 1.5rem;
+	text-decoration: none;
+	cursor: pointer;
+	
+}
+

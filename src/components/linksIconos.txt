@@ -1,0 +1,59 @@
+
+
+//https://icongr.am/material/apple-icloud.svg?size=70&color=0088ff   //nube
+//https://icongr.am/material/brightness-7.svg?size=70&color=e1ff00   //sun
+//https://icongr.am/material/brightness-3.svg?size=70&color=ae00ff //moon
+//https://icongr.am/material/flash.svg?size=70&color=00fbff  //ray
+//https://icongr.am/material/flare.svg?size=70&color=00fbff //anothersun
+//https://icongr.am/material/looks.svg?size=70&color=ffdd00  //rainbow
+//https://icongr.am/material/meteor.svg?size=70&color=ffdd00 //meteoro
+//https://icongr.am/material/moon-waning-crescent.svg?size=70&color=ffdd00 //luna creciente
+//https://icongr.am/material/salesforce.svg?size=70&color=ffdd00 //nube mas cargada
+
+
+//animals
+//https://icongr.am/material/bat.svg?size=70&color=d4ff00 // bat
+//https://icongr.am/material/cat.svg?size=70&color=ff5900  //cat
+//https://icongr.am/material/duck.svg?size=70&color=ff00a2  //duck
+//https://icongr.am/material/elephant.svg?size=70&color=00fbff //elephant
+//https://icongr.am/material/google-downasaur.svg?size=70&color=00fbff //google dinosaur
+//https://icongr.am/material/ladybug.svg?size=70&color=00fbff   //ladybug
+//https://icongr.am/material/penguin.svg?size=70&color=ffdd00 //penguin
+
+
+//sports 
+
+
+
+//https://icongr.am/material/boxing-glove.svg?size=70&color=d4ff00  //guante box
+//https://icongr.am/material/meditation.svg?size=70&color=ffdd00 //meditation
+
+//https://icongr.am/material/bowling.svg?size=70&color=ff0040  //bowling
+//https://icongr.am/material/racquetball.svg?size=70&color=ffdd00  //racquetbal
+
+//https://icongr.am/material/bike.svg?size=70&color=ffae00  //bike
+
+//https://icongr.am/material/biathlon.svg?size=70&color=00ff62 //hiking
+
+//https://icongr.am/material/bullseye-arrow.svg?size=70&color=007bff  //tiro con arco
+//https://icongr.am/material/karate.svg?size=70&color=00fbff  //karate
+//https://icongr.am/material/kabaddi.svg?size=70&color=00fbff //kabaddi
+//https://icongr.am/material/racing-helmet.svg?size=70&color=ffdd00  //motocross
+
+//https://icongr.am/material/roller-skate.svg?size=70&color=ffdd00  //rollers
+//
+
+
+//emoojis
+
+//https://icongr.am/material/emoticon-devil.svg?size=70&color=00fbff  
+//https://icongr.am/material/emoticon-kiss.svg?size=70&color=00fbff
+//https://icongr.am/material/emoticon-excited.svg?size=70&color=00fbff
+//https://icongr.am/material/emoticon-wink.svg?size=70&color=00fbff
+//https://icongr.am/material/emoticon-neutral.svg?size=70&color=00fbff
+//https://icongr.am/material/emoticon-happy.svg?size=70&color=00fbff
+//https://icongr.am/material/emoticon-frown.svg?size=70&color=00fbff
+//https://icongr.am/material/emoticon-confused.svg?size=70&color=00fbff
+//https://icongr.am/material/emoticon-angry.svg?size=70&color=00fbff
+//https://icongr.am/material/emoticon-cry.svg?size=70&color=00fbff
+//https://icongr.am/material/emoticon-cool.svg?size=70&color=00fbff

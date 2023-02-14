@@ -1,4 +1,6 @@
 import React , { useState , useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 const angular = "https://icongr.am/devicon/angularjs-original.svg?size=70&color=currentColor";
 const chrome = "https://icongr.am/devicon/chrome-original.svg?size=70&color=currentColor";
 const css = "https://icongr.am/devicon/css3-original.svg?size=70&color=currentColor";
@@ -39,12 +41,13 @@ const Memotest = () => {
 	},[guessed])
 	
 	return (
-		
+		<>
 			<ul 
 				style={{
 					display: "grid",
-					gridTemplateColumns: "repeat(auto-fill, minmax(128px, 1fr)" , 
-					gap: 24
+					gridTemplateColumns: "repeat(5, 1fr)" , 
+					gridTemplateRows: "repeat(4, 1fr)",
+					gap: 10
 				}}
 			>
 				
@@ -76,7 +79,10 @@ const Memotest = () => {
 				})}
 				
 			</ul>
-		
+			<div className="link-container">
+					<Link to="/" className="link">Back to Home</Link>
+			</div>
+		</>
 	
 	);
 }

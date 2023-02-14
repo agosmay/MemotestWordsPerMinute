@@ -1,4 +1,5 @@
 import React , { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 
 const words = [
@@ -58,7 +59,9 @@ const [word, setWord]= useState(()=> words[Math.random() * words.length | 0])
 	
 	const handleClick = () => {
 		if(buffer!==word && time===0) {
-			setBuffer("")
+			setBuffer("");
+			setCharacterCount(0);
+			
 			
 		}
 		
@@ -69,22 +72,27 @@ const [word, setWord]= useState(()=> words[Math.random() * words.length | 0])
 	
 	
 	return (
-		<div style={{display:"flex", flexDirection: "column", gap: 12, textAlign: "center"}}>
-			{Boolean(time) && <h1 style={{fontSize: 48}}>{word}</h1>}
-			<h1>Characters typed: {characterCount}</h1>
-			
-			<h3>Remaining time: {time}</h3>
-				{time!==0 ? (
-					
-					<form onSubmit={handleSubmit}>
-						<input type="text" autoFocus value={buffer} onChange={(e)=> setBuffer(e.target.value)} />
-						<button type="submit">Submit</button>
-					</form>
-				): (
-					<button onClick={()=> handleClick()}> Play</button>
-				)
-				}
-		</div>
+		<>
+			<div style={{display:"flex", flexDirection: "column", gap: 12, textAlign: "center"}}>
+				{Boolean(time) && <h1 style={{fontSize: 48}}>{word}</h1>}
+				<h1>Characters typed: {characterCount}</h1>
+				
+				<h3>Remaining time: {time}</h3>
+					{time!==0 ? (
+						
+						<form onSubmit={handleSubmit}>
+							<input type="text" autoFocus value={buffer} onChange={(e)=> setBuffer(e.target.value)} />
+							<button type="submit">Submit</button>
+						</form>
+					): (
+						<button onClick={()=> handleClick()}> Play</button>
+					)
+					}
+			</div>
+			<div className="link-container">
+				<Link to="/" className="link">Back to Home</Link>
+			</div>
+		</>
 	
 	);
 }
