@@ -41,7 +41,6 @@ img {
 body {
   margin: auto;
   display: flex;
-  place-items: center;
   max-width: 800px;
   min-height: 100vh;
 }
@@ -73,4 +72,17 @@ main {
 	text-decoration: none;
 	cursor: pointer;
 	
+}
+
+
+.memoList {
+	margin-top: 50px;
+	
+}
+
+.botonera-words {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
 }

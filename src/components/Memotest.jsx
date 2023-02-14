@@ -42,7 +42,7 @@ const Memotest = () => {
 	
 	return (
 		<>
-			<ul 
+			<ul className="memoList"
 				style={{
 					display: "grid",
 					gridTemplateColumns: "repeat(5, 1fr)" , 

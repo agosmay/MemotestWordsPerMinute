@@ -42,7 +42,7 @@ const Animals = () => {
 	
 	return (
 		<>
-			<ul className="memo-container"
+			<ul className="memoList"
 					style={{
 						display: "grid",
 						gridTemplateColumns: "repeat(5, 1fr)" , 

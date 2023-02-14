@@ -74,8 +74,8 @@ const [word, setWord]= useState(()=> words[Math.random() * words.length | 0])
 	
 	return (
 		<>
-			<div className="contenedor-words" style={{display:"flex", flexDirection: "column", gap: 12, textAlign: "center"}}>
-				{Boolean(time) && <h1 style={{fontSize: 48}}>{word}</h1>}
+			<div className="memoList" style={{display:"flex", flexDirection: "column", gap: 12, textAlign: "center"}}>
+				{Boolean(time) && <h1 style={{fontSize: 40}}>Type : {word}</h1>}
 				<h1>Characters typed: {characterCount}</h1>
 				
 				<h3>Remaining time: {time}</h3>
@@ -83,11 +83,14 @@ const [word, setWord]= useState(()=> words[Math.random() * words.length | 0])
 						
 						<form onSubmit={handleSubmit}>
 							<input style={{backgroundColor:"pink"}}type="text" autoFocus value={buffer} onChange={(e)=> setBuffer(e.target.value.toLowerCase())} />
-							<button type="submit">Submit</button>
+							<div className="botonera-words">
+								<button type="submit" style={{fontSize: "1.5rem", padding:"8px"}}>Submit</button>
+							</div>
 						</form>
 					): (
 						
-						<button onClick={()=> handleClick()}> Play</button>
+							<button onClick={()=> handleClick()}> Play</button>
+						
 					)
 					}
 			</div>
