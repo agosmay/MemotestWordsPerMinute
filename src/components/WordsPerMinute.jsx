@@ -74,18 +74,22 @@ const [word, setWord]= useState(()=> words[Math.random() * words.length | 0])
 	
 	return (
 		<>
-			<div className="memoList" style={{display:"flex", flexDirection: "column", gap: 12, textAlign: "center"}}>
-				{Boolean(time) && <h1 style={{fontSize: 40}}>Type : {word}</h1>}
-			
-					<h1>Characters typed: {characterCount}</h1>
+			<div className="memoList" style={{display:"flex", flexDirection: "column", gap: 12}}>
+				
+				<div style={{display:"flex", flexDirection: "row", justifyContent:"space-between"}}>
+					<h1  style={{fontSize:"18px"}}>Characters typed: {characterCount}</h1>
 					
-					<h3>Remaining time: {time}</h3>
+					<h3 style={{fontSize:"18px"}}>Remaining time: {time}</h3>
+				</div>
+					
 						{time!==0 ? (
 							
-							<form onSubmit={handleSubmit}>
-								<input style={{backgroundColor:"pink"}}type="text" autoFocus value={buffer} onChange={(e)=> setBuffer(e.target.value.toLowerCase())} />
+							<form onSubmit={handleSubmit} style={{textAlign: "center"}}>
+								{Boolean(time) && <h2>Type : {word}</h2>}
+								<br />
+								<input style={{backgroundColor:"white", color:"black"}}type="text" autoFocus value={buffer} onChange={(e)=> setBuffer(e.target.value.toLowerCase())} />
 								<div className="botonera-words">
-									<button type="submit" style={{fontSize: "1.5rem", padding:"8px"}}>Submit</button>
+									<button type="submit" style={{fontSize: "1rem", padding:"8px"}}>Submit</button>
 								</div>
 							</form>
 						): (

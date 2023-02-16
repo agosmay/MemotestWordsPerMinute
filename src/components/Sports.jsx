@@ -19,6 +19,7 @@ const imagenes = [box, bowling,racquetball, bike, hiking, tiroConArco, karate, k
 const Sports = () => {
 	const [guessed, setGuessed] = useState([])
 	const [selected, setSelected] = useState([])
+	const jsConfetti = new JSConfetti();
 	
 	useEffect(()=> {
 		if(selected.length=== 2) {
@@ -35,8 +36,7 @@ const Sports = () => {
 	useEffect(()=> {
 		
 		if(guessed.length===imagenes.length) {
-			alert('u win');
-			location.reload();
+			jsConfetti.addConfetti();
 		}
 	},[guessed])
 	
@@ -85,6 +85,14 @@ const Sports = () => {
 					
 				</ul>
 				<div className="link-container">
+					
+						
+						<img src="https://icongr.am/clarity/refresh.svg?size=25&color=00e1ff" style={{cursor:"pointer"}} onClick={()=> location.reload()} />
+						<p onClick={()=> location.reload()} style={{cursor: "pointer"}}>Play Again</p>
+				
+					
+					<br />
+					
 					<Link to="/" className="link">Back to Home</Link>
 				</div>
 			</>

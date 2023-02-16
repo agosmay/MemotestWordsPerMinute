@@ -68,7 +68,7 @@ main {
 
 .link {
 	color: white;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	text-decoration: none;
 	cursor: pointer;
 	
@@ -77,7 +77,7 @@ main {
 
 .memoList {
 	margin-top: 50px;
-	
+
 }
 
 .botonera-words {
