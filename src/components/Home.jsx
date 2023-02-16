@@ -6,6 +6,7 @@ const paw = "https://icongr.am/simple/baidu.svg?size=26&color=ffdd00&colored=fal
 const ray = "https://icongr.am/material/flash.svg?size=26&color=bb00ff";
 const karate = "https://icongr.am/material/karate.svg?size=26&color=00aaff";
 const devil = "https://icongr.am/material/emoticon-devil.svg?size=26&color=ff0004";
+const pencil = "https://icongr.am/fontawesome/pencil.svg?size=26&color=ffc800"
 
 
 const Home = () => {
@@ -18,21 +19,21 @@ const Home = () => {
 				<h2>Tap on Topic to Play</h2>
 				<br />
 					<ul className="homeList">
-						<li><img src={android} /><Link to="/tech" className="link">{" "}Tech</Link></li>
+						<li><Link to="/tech" className="link"><img src={android} />{" "}Tech</Link></li>
 						<br />
-						<li><img src={paw} /><Link to="/animals" className="link">{" "}Animals</Link></li>
+						<li><Link to="/animals" className="link"><img src={paw} />{" "}Animals</Link></li>
 						<br />
-						<li><img src={ray} /><Link to="/weather" className="link">{" "}Weather</Link></li>
+						<li><Link to="/weather" className="link"><img src={ray} />{" "}Weather</Link></li>
 						<br />
-						<li><img src={karate} /><Link to="/sports" className="link">{" "}Sports</Link></li>
+						<li><Link to="/sports" className="link"><img src={karate} />{" "}Sports</Link></li>
 						<br />
-						<li><img src={devil} /><Link to="/emoji" className="link">{" "}Emoji</Link></li>
+						<li><Link to="/emoji" className="link"><img src={devil} />{" "}Emoji</Link></li>
 					</ul>
 					<br />
 					<br/>
 					<h2>Also Play...</h2>
 					<ul className="homeList">
-						<li><Link to="/wpm" className="link">Go to Words Per Minute!</Link></li>
+						<li><Link to="/wpm" className="link"><img src={pencil} />{" "}Go to Words Per Minute!</Link></li>
 					</ul>
 			</div>
 			
