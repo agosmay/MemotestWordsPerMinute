@@ -37,7 +37,9 @@ const [word, setWord]= useState(()=> words[Math.random() * words.length | 0])
 	
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		if(buffer===word){
+		  const trimmedInputValue = buffer.trim();
+
+		if(trimmedInputValue===word){
 			setWord(words[(Math.random()* words.length) | 0]);
 			setCharacterCount(characterCount => characterCount + word.length);
 			setBuffer("");
