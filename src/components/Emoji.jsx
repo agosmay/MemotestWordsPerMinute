@@ -44,6 +44,7 @@ const Emoji = () => {
 	
 	return (
 		<>
+			<h2 style={{textAlign: "center", margin:"20px"}}>Emoji Memo</h2>
 			<ul className="memoList"
 					style={{
 						display: "grid",

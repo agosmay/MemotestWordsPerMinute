@@ -20,6 +20,8 @@
 //https://icongr.am/material/ladybug.svg?size=70&color=00fbff   //ladybug
 //https://icongr.am/material/penguin.svg?size=70&color=ffdd00 //penguin
 
+//pinguino, buho, perrito
+
 
 //sports 
 
@@ -57,3 +59,14 @@
 //https://icongr.am/material/emoticon-angry.svg?size=70&color=00fbff
 //https://icongr.am/material/emoticon-cry.svg?size=70&color=00fbff
 //https://icongr.am/material/emoticon-cool.svg?size=70&color=00fbff
+
+
+
+
+NPM RUN BUILD
+
+https://vitejs.dev/guide/static-deploy.html  seccion de github pages
+
+npm i gh-pages
+
+

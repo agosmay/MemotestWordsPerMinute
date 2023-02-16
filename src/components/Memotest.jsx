@@ -42,6 +42,7 @@ const Memotest = () => {
 	
 	return (
 		<>
+			<h2 style={{textAlign: "center", margin:"20px"}}>Tech Memo</h2>
 			<ul className="memoList"
 				style={{
 					display: "grid",

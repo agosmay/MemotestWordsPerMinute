@@ -76,23 +76,25 @@ const [word, setWord]= useState(()=> words[Math.random() * words.length | 0])
 		<>
 			<div className="memoList" style={{display:"flex", flexDirection: "column", gap: 12, textAlign: "center"}}>
 				{Boolean(time) && <h1 style={{fontSize: 40}}>Type : {word}</h1>}
-				<h1>Characters typed: {characterCount}</h1>
-				
-				<h3>Remaining time: {time}</h3>
-					{time!==0 ? (
-						
-						<form onSubmit={handleSubmit}>
-							<input style={{backgroundColor:"pink"}}type="text" autoFocus value={buffer} onChange={(e)=> setBuffer(e.target.value.toLowerCase())} />
-							<div className="botonera-words">
-								<button type="submit" style={{fontSize: "1.5rem", padding:"8px"}}>Submit</button>
-							</div>
-						</form>
-					): (
-						
-							<button onClick={()=> handleClick()}> Play</button>
-						
-					)
-					}
+			
+					<h1>Characters typed: {characterCount}</h1>
+					
+					<h3>Remaining time: {time}</h3>
+						{time!==0 ? (
+							
+							<form onSubmit={handleSubmit}>
+								<input style={{backgroundColor:"pink"}}type="text" autoFocus value={buffer} onChange={(e)=> setBuffer(e.target.value.toLowerCase())} />
+								<div className="botonera-words">
+									<button type="submit" style={{fontSize: "1.5rem", padding:"8px"}}>Submit</button>
+								</div>
+							</form>
+						): (
+							
+								<button onClick={()=> handleClick()}> Play</button>
+							
+						)
+						}
+			
 			</div>
 			<div className="link-container">
 				<Link to="/" className="link">Back to Home</Link>

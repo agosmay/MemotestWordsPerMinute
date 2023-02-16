@@ -42,6 +42,7 @@ const Sports = () => {
 	
 	return (
 		<>
+			<h2 style={{textAlign: "center", margin:"20px"}}>Sports Memo</h2>
 			<ul className="memoList"
 					style={{
 						display: "grid",

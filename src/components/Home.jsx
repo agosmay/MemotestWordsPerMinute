@@ -1,6 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+const android = "https://icongr.am/devicon/android-original.svg?size=26&color=currentColor";
+const paw = "https://icongr.am/simple/baidu.svg?size=26&color=ffdd00&colored=false";
+const ray = "https://icongr.am/material/flash.svg?size=26&color=bb00ff";
+const karate = "https://icongr.am/material/karate.svg?size=26&color=00aaff";
+const devil = "https://icongr.am/material/emoticon-devil.svg?size=26&color=ff0004";
 
 
 const Home = () => {
@@ -13,15 +18,15 @@ const Home = () => {
 				<h2>Tap on Topic to Play</h2>
 				<br />
 					<ul className="homeList">
-						<li><Link to="/tech" className="link">Tech</Link></li>
+						<li><img src={android} /><Link to="/tech" className="link">{" "}Tech</Link></li>
 						<br />
-						<li><Link to="/animals" className="link">Animals</Link></li>
+						<li><img src={paw} /><Link to="/animals" className="link">{" "}Animals</Link></li>
 						<br />
-						<li><Link to="/weather" className="link">Weather</Link></li>
+						<li><img src={ray} /><Link to="/weather" className="link">{" "}Weather</Link></li>
 						<br />
-						<li><Link to="/sports" className="link">Sports</Link></li>
+						<li><img src={karate} /><Link to="/sports" className="link">{" "}Sports</Link></li>
 						<br />
-						<li><Link to="/emoji" className="link">Emoji</Link></li>
+						<li><img src={devil} /><Link to="/emoji" className="link">{" "}Emoji</Link></li>
 					</ul>
 					<br />
 					<br/>

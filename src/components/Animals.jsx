@@ -42,6 +42,7 @@ const Animals = () => {
 	
 	return (
 		<>
+			<h2 style={{textAlign: "center", margin:"20px"}}>Animals Memo</h2>
 			<ul className="memoList"
 					style={{
 						display: "grid",
